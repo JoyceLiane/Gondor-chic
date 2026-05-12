@@ -1,0 +1,42 @@
+<div class="page-wrapper">
+  <div class="parchment-container">
+
+    <!-- Sceau -->
+    <div class="seal">
+      <img src="logo.png" alt="Gondor Chic" class="seal-img" />
+    </div>
+
+    <!-- Titre -->
+    <h1 class="title">Magic VentesStock</h1>
+
+    <!-- Sous-titre avec séparateurs -->
+    <div class="subtitle-wrapper">
+      <p class="subtitle">"Bienvenue dans les contrées de Gondor Chic"</p>
+      <div class="divider-ornament">
+        <span class="divider-line-left"></span>
+        <span class="divider-symbol">&#10040;</span>
+        <span class="divider-line-right"></span>
+      </div>
+    </div>
+
+    <!-- Formulaire -->
+    <form class="login-form" (ngSubmit)="onSubmit()" #loginForm="ngForm">
+      <div class="form-group">
+        <label for="pseudo">Pseudo</label>
+        <input id="pseudo" type="text" name="pseudo" [(ngModel)]="pseudo" autocomplete="username" />
+      </div>
+
+      <div class="form-group">
+        <label for="motDePasse">Mot de passe</label>
+        <input id="motDePasse" type="password" name="motDePasse" [(ngModel)]="motDePasse"
+          autocomplete="current-password" />
+      </div>
+
+      <button type="submit" class="btn-login">S'identifier</button>
+    </form>
+
+    <!-- Pied de page -->
+    <p class="footer-text">"Élégance et Tradition"</p>
+
+  </div>
+</div>
