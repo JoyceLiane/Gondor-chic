@@ -2,32 +2,29 @@
   <div class="parchment-container">
     <!-- Coins ornementaux SVG -->
     <svg class="corner corner-tl" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 54">
-      <path d="M 7 47 C 7 25 25 7 47 7" stroke="#8b5e3c" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-      <line x1="4" y1="47" x2="10" y2="47" stroke="#8b5e3c" stroke-width="1.5" stroke-linecap="round"/>
-      <line x1="47" y1="4" x2="47" y2="10" stroke="#8b5e3c" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M 7 47 C 7 25 25 7 47 7" stroke="#8b5e3c" stroke-width="1.5" fill="none" stroke-linecap="round" />
+      <line x1="4" y1="47" x2="10" y2="47" stroke="#8b5e3c" stroke-width="1.5" stroke-linecap="round" />
+      <line x1="47" y1="4" x2="47" y2="10" stroke="#8b5e3c" stroke-width="1.5" stroke-linecap="round" />
     </svg>
     <svg class="corner corner-tr" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 54">
-      <path d="M 7 47 C 7 25 25 7 47 7" stroke="#8b5e3c" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-      <line x1="4" y1="47" x2="10" y2="47" stroke="#8b5e3c" stroke-width="1.5" stroke-linecap="round"/>
-      <line x1="47" y1="4" x2="47" y2="10" stroke="#8b5e3c" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M 7 47 C 7 25 25 7 47 7" stroke="#8b5e3c" stroke-width="1.5" fill="none" stroke-linecap="round" />
+      <line x1="4" y1="47" x2="10" y2="47" stroke="#8b5e3c" stroke-width="1.5" stroke-linecap="round" />
+      <line x1="47" y1="4" x2="47" y2="10" stroke="#8b5e3c" stroke-width="1.5" stroke-linecap="round" />
     </svg>
     <svg class="corner corner-bl" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 54">
-      <path d="M 7 47 C 7 25 25 7 47 7" stroke="#8b5e3c" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-      <line x1="4" y1="47" x2="10" y2="47" stroke="#8b5e3c" stroke-width="1.5" stroke-linecap="round"/>
-      <line x1="47" y1="4" x2="47" y2="10" stroke="#8b5e3c" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M 7 47 C 7 25 25 7 47 7" stroke="#8b5e3c" stroke-width="1.5" fill="none" stroke-linecap="round" />
+      <line x1="4" y1="47" x2="10" y2="47" stroke="#8b5e3c" stroke-width="1.5" stroke-linecap="round" />
+      <line x1="47" y1="4" x2="47" y2="10" stroke="#8b5e3c" stroke-width="1.5" stroke-linecap="round" />
     </svg>
     <svg class="corner corner-br" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 54 54">
-      <path d="M 7 47 C 7 25 25 7 47 7" stroke="#8b5e3c" stroke-width="1.5" fill="none" stroke-linecap="round"/>
-      <line x1="4" y1="47" x2="10" y2="47" stroke="#8b5e3c" stroke-width="1.5" stroke-linecap="round"/>
-      <line x1="47" y1="4" x2="47" y2="10" stroke="#8b5e3c" stroke-width="1.5" stroke-linecap="round"/>
+      <path d="M 7 47 C 7 25 25 7 47 7" stroke="#8b5e3c" stroke-width="1.5" fill="none" stroke-linecap="round" />
+      <line x1="4" y1="47" x2="10" y2="47" stroke="#8b5e3c" stroke-width="1.5" stroke-linecap="round" />
+      <line x1="47" y1="4" x2="47" y2="10" stroke="#8b5e3c" stroke-width="1.5" stroke-linecap="round" />
     </svg>
 
     <!-- Sceau -->
     <div class="seal">
-      <div class="seal-inner">
-        <span class="seal-crown">&#9813;</span>
-        <span class="seal-text">GLC</span>
-      </div>
+      <img src="logo.png" alt="Gondor Chic" class="seal-img" />
     </div>
 
     <!-- Titre -->
@@ -43,24 +40,13 @@
     <form class="login-form" (ngSubmit)="onSubmit()" #loginForm="ngForm">
       <div class="form-group">
         <label for="pseudo">Pseudo</label>
-        <input
-          id="pseudo"
-          type="text"
-          name="pseudo"
-          [(ngModel)]="pseudo"
-          autocomplete="username"
-        />
+        <input id="pseudo" type="text" name="pseudo" [(ngModel)]="pseudo" autocomplete="username" />
       </div>
 
       <div class="form-group">
         <label for="motDePasse">Mot de passe</label>
-        <input
-          id="motDePasse"
-          type="password"
-          name="motDePasse"
-          [(ngModel)]="motDePasse"
-          autocomplete="current-password"
-        />
+        <input id="motDePasse" type="password" name="motDePasse" [(ngModel)]="motDePasse"
+          autocomplete="current-password" />
       </div>
 
       <button type="submit" class="btn-login">S'identifier</button>

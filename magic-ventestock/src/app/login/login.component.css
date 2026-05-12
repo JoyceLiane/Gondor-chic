@@ -78,43 +78,17 @@
    SCEAU
    ============================================= */
 .seal {
-  width: 92px;
-  height: 92px;
-  margin: -96px 0 18px;
-  background:
-    radial-gradient(circle at 35% 30%, #c84030 0%, #8b1f1f 55%, #5a0f0f 100%);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow:
-    0 6px 16px rgba(100, 20, 20, 0.55),
-    inset 0 3px 8px rgba(255, 140, 140, 0.25),
-    inset 0 -4px 10px rgba(40, 0, 0, 0.4);
+  width: 150px;
+  height: 150px;
+  margin: -154px 0 16px;
   position: relative;
 }
 
-.seal-inner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  line-height: 1;
-}
-
-.seal-crown {
-  font-size: 22px;
-  color: #f5d9a8;
-  margin-bottom: 2px;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
-}
-
-.seal-text {
-  font-family: 'Cinzel', 'Times New Roman', serif;
-  font-size: 15px;
-  font-weight: 700;
-  color: #f5d9a8;
-  letter-spacing: 3px;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+.seal-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 6px 14px rgba(100, 20, 20, 0.5));
 }
 
 /* =============================================
