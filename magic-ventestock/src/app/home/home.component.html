@@ -39,11 +39,11 @@
         <div class="action-zone">
           <div class="quantity-wrapper">
             <div class="quantity-selector">
-              <button type="button" class="qty-btn">
+              <button type="button" class="qty-btn" (click)="decreaseQuantity()">
                 <img src="/icons/-.png" alt="Moins" />
               </button>
-              <input type="number" class="qty-input" value="1" min="1" readonly />
-              <button type="button" class="qty-btn">
+              <input type="number" class="qty-input" [value]="quantity" min="1" readonly />
+              <button type="button" class="qty-btn" (click)="increaseQuantity(produitDuJour.quantite_stock)">
                 <img src="/icons/+.png" alt="Plus" />
               </button>
             </div>

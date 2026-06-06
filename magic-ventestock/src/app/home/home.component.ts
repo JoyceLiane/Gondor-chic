@@ -10,5 +10,19 @@ import { AuthService } from '../auth.service';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+  quantity = 1;
+
   constructor(public readonly authService: AuthService) {}
+
+  decreaseQuantity(): void {
+    if (this.quantity > 1) {
+      this.quantity -= 1;
+    }
+  }
+
+  increaseQuantity(maxQuantity?: number): void {
+    if (maxQuantity == null || this.quantity < maxQuantity) {
+      this.quantity += 1;
+    }
+  }
 }
