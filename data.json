@@ -1,0 +1,50 @@
+{
+  "sprint": 2,
+  "projet": "Gondor Chic",
+  "application": "Magic VentesStock",
+  "data": {
+    "clients": [
+      {
+        "prenom": "Frodon",
+        "nom": "Sacquet",
+        "pseudo": "Leporteur",
+        "mot_de_pass": "!totoXXS"
+      },
+      {
+        "prenom": "Sam",
+        "nom": "Gamegie",
+        "pseudo": "Lebrave",
+        "mot_de_pass": "titiXXL"
+      },
+      {
+        "prenom": "Pippin",
+        "nom": "Touque",
+        "pseudo": "Lefestif",
+        "mot_de_pass": "!nainXXL"
+      }
+    ],
+    "produits": [
+      {
+        "libelle": "Chaudron magique",
+        "prix_gar": 250,
+        "quantite_stock": 678,
+        "est_du_jour": false,
+        "image": "Chaudron_magique.png"
+      },
+      {
+        "libelle": "Cape magique",
+        "prix_gar": 180,
+        "quantite_stock": 120,
+        "est_du_jour": false,
+        "image": "Cape_magique.png"
+      },
+      {
+        "libelle": "Coffret de bijoux de fondcombe",
+        "prix_gar": 60,
+        "quantite_stock": 15,
+        "est_du_jour": true,
+        "image": "Coffret_de_bijoux_de_fondcombe.png"
+      }
+    ]
+  }
+}

@@ -8,7 +8,7 @@
     <h1 class="title">Magic VentesStock</h1>
 
     <div class="subtitle-wrapper" style="text-align: center; width: 100%;">
-      <p class="welcome-message">Bienvenue, <span class="client-name">Eldaf</span></p>
+      <p class="welcome-message">Bienvenue, <span class="client-name">{{ authService.displayName }}</span></p>
       <div class="divider-ornament">
         <span class="divider-line-left"></span>
         <span class="divider-symbol">&#10040;</span>
@@ -16,47 +16,50 @@
       </div>
     </div>
 
-    <div class="product-layout">
-      
+    <div class="product-layout" *ngIf="authService.produitDuJour as produitDuJour">
       <div class="product-image-container">
-        <img src="products/02.png" alt="Produit Gondor" class="product-img" />
+        <img [src]="'./assets/img/' + produitDuJour.image" [alt]="produitDuJour.libelle" class="product-img" />
       </div>
 
       <div class="product-details">
-        <h3 class="product-title">Coffret à Bijoux de Fondcombe</h3>
-        
+        <h3 class="product-title">Produit du jour</h3>
+        <p class="product-name">{{ produitDuJour.libelle }}</p>
+
         <div class="product-meta">
           <div class="meta-box">
             <span class="label">PRIX</span>
-            <span class="value">60 GAr</span>
+            <span class="value">{{ produitDuJour.prix_gar }} GAr</span>
           </div>
           <div class="meta-box">
             <span class="label">STOCK</span>
-            <span class="value">15 PIÈCES</span>
+            <span class="value">{{ produitDuJour.quantite_stock }} PIÈCES</span>
           </div>
         </div>
-        
+
         <div class="action-zone">
           <div class="quantity-wrapper">
             <div class="quantity-selector">
               <button type="button" class="qty-btn">
-                <img src="icons/-.png" alt="Moins" />
+                <img src="/icons/-.png" alt="Moins" />
               </button>
               <input type="number" class="qty-input" value="1" min="1" readonly />
               <button type="button" class="qty-btn">
-                <img src="icons/+.png" alt="Plus" />
+                <img src="/icons/+.png" alt="Plus" />
               </button>
             </div>
           </div>
 
           <div class="cart-btn-wrapper">
             <button type="button" class="btn-add-cart">
-              <img src="icons/add-to-card.png" alt="Ajouter au Panier" />
+              <img src="/icons/add-to-card.png" alt="Ajouter au Panier" />
             </button>
           </div>
         </div>
-
       </div>
+    </div>
+
+    <div class="no-product" *ngIf="!authService.produitDuJour">
+      <p>Pas de produit du jour disponible.</p>
     </div>
 
     <!-- <p class="footer-text">"Élégance et Tradition"</p> -->

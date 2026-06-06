@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { AuthService } from '../auth.service';
 
 @Component({
   selector: 'app-home',
@@ -9,5 +10,5 @@ import { CommonModule } from '@angular/common';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  // Prêt pour la logique de gestion de quantité au prochain niveau !
+  constructor(public readonly authService: AuthService) {}
 }
